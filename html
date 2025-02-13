@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fudbalski Talent Balkan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Fudbalski Talent Balkan</h1>
+        <nav>
+            <ul>
+                <li><a href="#igraci">Igrači</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="igraci">
+        <h2>Lista Igrača</h2>
+        <div class="lista-igraca">
+            <div class="igrac" onclick="prikaziDetalje('Luka Modrić')">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Luka_Modric_2018.jpg" alt="Luka Modrić">
+                <p>Luka Modrić</p>
+            </div>
+            <div class="igrac" onclick="prikaziDetalje('Dušan Tadić')">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Dusan_Tadic_2021.jpg" alt="Dušan Tadić">
+                <p>Dušan Tadić</p>
+            </div>
+            <div class="igrac" onclick="prikaziDetalje('Edin Džeko')">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Edin_Dzeko_2021.jpg" alt="Edin Džeko">
+                <p>Edin Džeko</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="detalji-igraca" style="display: none;">
+        <h2>Detalji Igrača</h2>
+        <img id="igrac-slika" src="" alt="Slika igrača" style="width: 200px; height: auto;">
+        <p id="detalji"></p>
+        <button onclick="zatvoriDetalje()">Zatvori</button>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
